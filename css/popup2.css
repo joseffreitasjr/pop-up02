@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-weight: 300;
+  font-style: normal;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000a9;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 60rem;
+  height: 33rem;
+  max-height: 33rem;
+  background-color: #f1eded;
+  border-radius: 1rem;
+
+  & .header {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 2.2rem;
+
+    & .titulo {
+      font-size: 5rem;
+      color: blue;
+    }
+
+    & .close-background {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      content: "";
+      height: 22px;
+      width: 22px;
+      border-radius: 50%;
+      background-color: #00000086;
+      position: absolute;
+      top: -14px;
+      right: 10px;
+
+      &:hover {
+        background-color: #000;
+        cursor: pointer;
+      }
+
+      & .close {
+        color: white;
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  & .anuncio {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    & .titulo-anuncio {
+      & h2 {
+        font-size: 3rem;
+        padding: 2rem;
+      }
+    }
+    
+    & .msg-anuncio {
+      font-size: 2rem;
+      padding: 1rem 3rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    & button {
+      padding: 1rem 12rem;
+      font-size: 2rem;
+      color: #fff;
+      font-weight: bold;
+      background-color: rgb(0, 153, 255);
+      border-radius: 1rem;
+      border: none;
+
+      &:hover {
+        background-color: rgb(1, 76, 126);
+        transition: 0.4s;
+      }
+    }
+  }
+}
